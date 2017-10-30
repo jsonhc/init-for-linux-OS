@@ -1,0 +1,17 @@
+# install git
+yum install git -y
+
+# add somes projects to github
+git clone https://github.com/jsonhc/xxxxx.git
+git config --global user.name "json_hc"
+git config --global user.email "json_hc@163.com"
+git remote set-url origin https://jsonhc@github.com/jsonhc/xxxxx.git
+git add .
+git commit -m "add xxxxx"
+git push -u origin master
+
+# pull from github
+git pull origin master
+git add .
+git commit -m "add xxxx"
+git push -u origin master

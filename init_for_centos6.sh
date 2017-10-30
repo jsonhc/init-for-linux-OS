@@ -1,3 +1,5 @@
+# base centos6 mini
+
 # stop iptables
 service iptables stop
 

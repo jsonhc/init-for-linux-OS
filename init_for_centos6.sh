@@ -34,3 +34,14 @@ ntp4.aliyun.com
 ntp5.aliyun.com
 ntp6.aliyun.com
 ntp7.aliyun.com
+
+#backup CentOS-Base.repo
+mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
+
+# install epel repo
+cd /etc/yum.repos.d
+wget http://mirrors.neusoft.edu.cn/epel/epel-release-latest-6.noarch.rpm
+rpm -ivh epel-release-latest-6.noarch.rpm
+
+# install aliyun repo
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo

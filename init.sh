@@ -23,3 +23,12 @@ rpm -ivh epel-release-latest-6.noarch.rpm
 cd /var/spool/cron/
 echo "*/1 * * * * /usr/sbin/ntpdate time.nist.gov > /dev/null" >> root
 # ansible dbservers -m shell -a 'cd /var/spool/cron/; echo "*/1 * * * * /usr/sbin/ntpdate time.nist.gov &> /dev/null" >> root'
+
+# 添加阿里云时间同步服务器
+ntp1.aliyun.com
+ntp2.aliyun.com
+ntp3.aliyun.com
+ntp4.aliyun.com
+ntp5.aliyun.com
+ntp6.aliyun.com
+ntp7.aliyun.com

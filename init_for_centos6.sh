@@ -40,7 +40,7 @@ mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
 
 # install epel repo
 cd /etc/yum.repos.d
-wget http://mirrors.neusoft.edu.cn/epel/epel-release-latest-6.noarch.rpm
+wget https://mirrors.ustc.edu.cn/epel//epel-release-latest-6.noarch.rpm
 rpm -ivh epel-release-latest-6.noarch.rpm
 
 # install aliyun repo

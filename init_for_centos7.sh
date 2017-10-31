@@ -20,15 +20,6 @@ cd /var/spool/cron/
 echo "*/1 * * * * /usr/sbin/ntpdate ntp1.aliyun.com > /dev/null" >> root
 
 
-# add aliyun ntp server
-ntp1.aliyun.com
-ntp2.aliyun.com
-ntp3.aliyun.com
-ntp4.aliyun.com
-ntp5.aliyun.com
-ntp6.aliyun.com
-ntp7.aliyun.com
-
 #backup CentOS-Base.repo
 mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
 
@@ -39,3 +30,7 @@ rpm -ivh epel-release-latest-7.noarch.rpm
 
 # install aliyun repo
 wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+
+# yum cache
+yum clean all
+yum makecache

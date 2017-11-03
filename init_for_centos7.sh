@@ -34,3 +34,6 @@ wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-
 # yum cache
 yum clean all
 yum makecache
+
+# 163的源
+http://mirrors.163.com/.help/centos.html

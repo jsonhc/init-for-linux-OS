@@ -37,3 +37,4 @@ yum makecache
 
 # 163的源
 http://mirrors.163.com/.help/centos.html
+wget -O CentOS-Base.repo http://mirrors.163.com/.help/CentOS7-Base-163.repo

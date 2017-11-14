@@ -1,7 +1,7 @@
 # base centos7 mini
 
 # install require package
-yum install vim net-tools wget tree lrzsz ntpdate lsof lftp
+yum install vim net-tools wget tree lrzsz ntpdate lsof lftp -y
 
 # stop firewalld server
 systemctl stop firewalld.service

@@ -19,6 +19,9 @@ sed -i 's#SELINUX=enforcing#SELINUX=disabled#g' /etc/sysconfig/selinux
 cd /var/spool/cron/
 echo "*/1 * * * * /usr/sbin/ntpdate ntp1.aliyun.com > /dev/null" >> root
 
+# setup timezone
+cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
 
 #backup CentOS-Base.repo
 mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak

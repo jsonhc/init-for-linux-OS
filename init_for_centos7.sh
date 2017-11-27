@@ -32,6 +32,7 @@ wget https://mirrors.ustc.edu.cn/epel//epel-release-latest-7.noarch.rpm
 rpm -ivh epel-release-latest-7.noarch.rpm
 
 # install aliyun repo
+# http://mirrors.aliyun.com/help/centos
 wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 
 # yum cache

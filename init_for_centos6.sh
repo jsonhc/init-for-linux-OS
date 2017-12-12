@@ -34,6 +34,9 @@ mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
 cd /etc/yum.repos.d
 wget https://mirrors.ustc.edu.cn/epel//epel-release-latest-6.noarch.rpm
 rpm -ivh epel-release-latest-6.noarch.rpm
+# 如果执行报错Error: Cannot retrieve metalink for repository: epel. Please verify its path and try again
+# 编辑[epel]下的baseurl前的#号去掉，mirrorlist前添加#号
+
 
 # install aliyun repo
 wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo

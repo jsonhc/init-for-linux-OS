@@ -44,5 +44,5 @@ http://mirrors.163.com/.help/centos.html
 wget -O CentOS-Base.repo http://mirrors.163.com/.help/CentOS7-Base-163.repo
 
 # modify hostname
-hostname master
+hostnamectl set-hostname master
 echo "master" >> /etc/sysconfig/network

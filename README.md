@@ -6,3 +6,9 @@ init for centos6 and centos7
 
 
 https://www.server-world.info/en/
+
+正则表达式学习笔记
+http://bbs.chinaunix.net/forum.p ... mp;fromuid=24785593
+
+正则表达式高级学习技巧
+http://bbs.chinaunix.net/forum.p ... mp;fromuid=24785593

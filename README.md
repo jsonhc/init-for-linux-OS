@@ -11,4 +11,4 @@ https://www.server-world.info/en/
 http://bbs.chinaunix.net/forum.php?mod=viewthread&tid=2017039&fromuid=24785593
 
 正则表达式高级学习技巧
-http://bbs.chinaunix.net/forum.php?mod=viewthread&tid=2017039&fromuid=24785593
+http://bbs.chinaunix.net/forum.php?mod=viewthread&tid=1205942&fromuid=24785593

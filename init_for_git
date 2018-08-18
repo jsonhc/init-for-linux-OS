@@ -3,9 +3,8 @@ yum install git -y
 
 # add somes projects to github
 git clone https://github.com/jsonhc/xxxxx.git
-git config --global user.name "json_hc"
+git config --global user.name "jsonhc"
 git config --global user.email "json_hc@163.com"
-git remote set-url origin https://jsonhc@github.com/jsonhc/xxxxx.git
 git add .
 git commit -m "add xxxxx"
 git push -u origin master
@@ -15,3 +14,37 @@ git pull origin master
 git add .
 git commit -m "add xxxx"
 git push -u origin master
+
+如：
+[root@aliyun project_for_linux]# git add .
+[root@aliyun project_for_linux]# git commit -m "add awk_demo"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'root@aliyun.(none)')
+[root@aliyun project_for_linux]# git config --global user.name "jsonhc"
+[root@aliyun project_for_linux]# git config --global user.email "json_hc@163.com"
+[root@aliyun project_for_linux]# git commit -m "add awk_demo"
+[master 7c82918] add awk_demo
+ 2 files changed, 81 insertions(+)
+ create mode 100644 awk_demo/awk_emp.sh
+ create mode 100644 awk_demo/emp.txt
+[root@aliyun project_for_linux]# git push -u origin master
+Username for 'https://github.com': jsonhc
+Password for 'https://jsonhc@github.com': 
+Counting objects: 6, done.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.04 KiB | 0 bytes/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/jsonhc/project_for_linux.git
+   19ee9b5..7c82918  master -> master
+Branch master set up to track remote branch master from origin.

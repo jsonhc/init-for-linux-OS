@@ -1,0 +1,14 @@
+# 上线KMS服务~一句命令激活windows/office
+# 激活win：
+使用管理员权限运行cmd执行一句命令就足够：
+  slmgr /skms kms.03k.org     # 这句命令的意思是，把kms服务器地址设置（set kms）为kms.03k.org
+然后手动激活：
+  slmgr /ato
+  
+  
+# 激活office：
+找到你的office安装目录，比如C:\Program Files (x86)\Microsoft Office\Office16      # 还是使用管理员权限运行cmd执行
+  cd "C:\Program Files (x86)\Microsoft Office\Office16"
+  cscript ospp.vbs /sethst:kms.03k.org
+手动激活命令：
+  cscript ospp.vbs /act
